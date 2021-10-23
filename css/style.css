@@ -67,6 +67,7 @@ header {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
 }
 
+
 header .contact {
   float: right;
 }
@@ -276,6 +277,12 @@ html {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.team-img {
+  height: 250px;
+  width: 100%;
+  padding: 10px;
 }
 
 .container {
