@@ -66,12 +66,9 @@ header {
   -ms-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
 }
-header .logo {
-  color: #004A55;
-  float: left;
-  font-family: "Dosis", arial, tahoma, verdana;
-  font-size: 22px;
-  font-weight: 500;
+header .logo-img {
+  height: 150px;
+  width: 200px;
 }
 
 header .contact {
