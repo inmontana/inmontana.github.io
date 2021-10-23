@@ -141,8 +141,9 @@
   content: "";
   position: absolute;
   height: 5px;
-  background: #5ad67d;
-  width: 35px;
+  background: #112D4E;
+  opacity: 50%;
+  width: 80%;
   top: -0.75rem;
   border-radius: 3px;
 }
