@@ -76,10 +76,10 @@ header .logo {
   font-weight: 500;
 }
 
-header .social {
+header .contact {
   float: right;
 }
-header .social .btn {
+header .contact .btn {
   font-family: "Dosis";
   font-size: 14px;
   margin: 10px 5px;
