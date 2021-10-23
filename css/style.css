@@ -159,6 +159,16 @@ header .contact .btn {
   -ms-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
 }
+
+#timeline .timeline-item .timeline-content h3 {
+  padding: 5px;
+  background: #007688;
+  color: #fff;
+  margin: 0 -20px 0 0;
+  font-weight: 100;
+ 
+}
+
 #timeline .timeline-item .timeline-content:before {
   content: '';
   position: absolute;
