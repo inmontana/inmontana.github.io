@@ -60,8 +60,6 @@ h1, h2, h3, h4 {
 header {
   background-image: url('../images/background.png');
   background-position-y: center;
-  text-align: center;
-  
   padding: 10px;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
