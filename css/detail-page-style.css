@@ -17,12 +17,6 @@
   overflow: hidden;
   z-index: 0;
 }
-.blog-card a {
-  color: inherit;
-}
-.blog-card a:hover {
-  color: #5ad67d;
-}
 
 .blog-card .meta {
   position: relative;
@@ -104,6 +98,7 @@
   .blog-card {
     flex-direction: row;
     max-width: 700px;
+    /* change max-width to make cards wider */
   }
   .blog-card .meta {
     flex-basis: 40%;

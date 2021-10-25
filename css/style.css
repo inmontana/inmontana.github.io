@@ -22,6 +22,11 @@ body, html {
   float: left;
 }
 
+.milestone > span {
+  color: #007688;
+  font-weight: 300;
+}
+
 body {
   background: #f9f9f9;
   background-size: cover;
