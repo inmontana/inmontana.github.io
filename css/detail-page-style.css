@@ -43,7 +43,8 @@
 }
 .blog-card .description h1,
 .blog-card .description h2 {
-  font-family: Poppins, sans-serif;
+  font-family: sans-serif;
+
 }
 .blog-card .description h1 {
   line-height: 1;
@@ -98,7 +99,7 @@
 @media (min-width: 640px) {
   .blog-card {
     flex-direction: row;
-    max-width: 700px;
+    max-width: 80%;
     /* change max-width to make cards wider */
   }
   .blog-card .meta {

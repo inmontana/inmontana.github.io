@@ -324,4 +324,74 @@ html {
   background-color: #fff;
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   padding: 10px;
+  margin-bottom: 1.6%;
+}
+
+.box-center p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+.box-center p:first-of-type {
+  margin-top: 1.25rem;
+}
+.box-center p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #112D4E;
+  opacity: 50%;
+  width: 80%;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+
+.box-center .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.box-center .description h1,
+.box-center .description h2 {
+  font-family: Poppins, sans-serif;
+}
+.box-center .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+@media (min-width: 640px) {
+  .box-center {
+    flex-direction: row;
+    max-width: 80%;
+    /* change max-width to make cards wider */
+  }
+  .box-center .meta {
+    flex-basis: 40%;
+    height: auto;
+  }
+  .box-center .description {
+    flex-basis: 100%;
+  }
+  .box-center .description:before {
+    transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .box-center.alt {
+    flex-direction: row-reverse;
+  }
+  .box-center.alt .description:before {
+    left: inherit;
+    right: -10px;
+    transform: skew(3deg);
+  } 
 }
