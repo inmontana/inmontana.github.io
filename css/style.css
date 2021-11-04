@@ -203,14 +203,6 @@ header .contact .btn {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  -webkit-transition: background 0.3s ease;
-  -moz-transition: background 0.3s ease;
-  -ms-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  -webkit-box-shadow: 2px 2px 0 #003555 ;
-  -moz-box-shadow: 2px 2px 0 #003555 ;
-  -ms-box-shadow: 2px 2px 0 #003555 ;
-  box-shadow: 2px 2px 0 #003555 ;
 }
 
 .btn:hover {
@@ -222,6 +214,7 @@ header .contact .btn {
   -ms-box-shadow: 2px 2px 0 transparent;
   box-shadow: 2px 2px 0 transparent;
 }
+
 .contact-btn {
   padding: 5px 15px;
   text-decoration: none;
@@ -305,7 +298,6 @@ html {
 .button {
   border: none;
   outline: 0;
-  display: inline-block;
   padding: 8px;
   color: white;
   background-color: #000;
@@ -360,6 +352,11 @@ html {
   line-height: 1;
   margin: 0;
   font-size: 1.7rem;
+}
+
+.milestone-btn {
+  background: none;
+  box-shadow: none;
 }
 
 @media (min-width: 640px) {
