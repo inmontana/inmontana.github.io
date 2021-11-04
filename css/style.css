@@ -322,9 +322,6 @@ html {
   margin: auto;
   width: 100%;
   background-color: #fff;
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
-  -ms-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
