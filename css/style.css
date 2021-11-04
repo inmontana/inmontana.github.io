@@ -359,6 +359,11 @@ html {
   box-shadow: none;
 }
 
+.form-img {
+  width:30%;
+  margin: auto;
+}
+
 @media (min-width: 640px) {
   .box-center {
     flex-direction: row;
