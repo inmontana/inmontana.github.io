@@ -229,8 +229,7 @@
 			  
 				<button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 				<button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-			  </div>
-
+			</div>
 		</div>
 		
 		<div class="box-center">
@@ -333,12 +332,10 @@
 	  for (i = 0; i < x.length; i++) {
 		x[i].style.display = "none";  
 	  }
-	  slideIndex++;
 	  if (slideIndex > x.length) {
 		  slideIndex = 1;
 	  }
 	  x[slideIndex-1].style.display = "block";
-	  setTimeout(showDivs, 4000); // Change image every 4 seconds  
 	}
-	</script>
+</script>
 	
