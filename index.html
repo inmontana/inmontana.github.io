@@ -342,6 +342,24 @@
 			</div>
 
 			<div class="box-center">
+				<h1>Wireframes</h1>
+				<p></p>
+				
+				<div class="w3-content w3-display-container">
+					<img class="wire-img" src="images/wire1.PNG">
+					<img class="wire-img" src="images/wire2.PNG">
+					<img class="wire-img" src="images/wire3.PNG">
+					<img class="wire-img" src="images/wire4.PNG">
+					<img class="wire-img" src="images/wire5.PNG">
+					<img class="wire-img" src="images/wire6.PNG">
+					<img class="wire-img" src="images/wire7.PNG">
+
+					<button class="w3-button w3-white w3-display-left" onclick="plusDivsWire(-1)">&#10094;</button>
+					<button class="w3-button w3-white w3-display-right" onclick="plusDivsWire(1)">&#10095;</button>
+				</div>
+			</div>
+
+			<div class="box-center">
 				<h1>Landing page</h1>
 				<p>If you like our idea, feel free to check out our <b><a href="landing-page.html">landing page!</a></b></p>
 			</div>
@@ -442,5 +460,33 @@
 		}
 
 		x[slideIndex].style.display = "block";
+	}
+</script>
+
+<script>
+	var slideIndexWire = 1;
+	showDivsWire(slideIndexWire);
+
+	function plusDivsWire(n) {
+		slideIndexWire += n
+		showDivsWire(slideIndexWire);
+	}
+
+	function showDivsWire(idx) {
+		var iW;
+		var xW = document.getElementsByClassName("wire-img");
+
+		if (slideIndexWire > xW.length - 1) {
+			slideIndexWire = 0;
+		}
+		if (slideIndexWire < 0) {
+			slideIndexWire = xW.length - 1;
+		}
+
+		for (iW = 0; iW < xW.length; iW++) {
+			xW[iW].style.display = "none";
+		}
+
+		xW[slideIndexWire].style.display = "block";
 	}
 </script>
