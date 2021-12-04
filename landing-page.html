@@ -1,312 +1,407 @@
 <!DOCTYPE html>
-<html>
-<title>inMontana</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style-landing.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<html class="no-js" lang="zxx">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M68CS5L0V9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>inMontana</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
 
-  gtag('config', 'G-M68CS5L0V9');
-</script>
-<!-- Hotjar Tracking Code for My site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2731115,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- ========================= ANALYTICS ======================= -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M68CS5L0V9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M68CS5L0V9');
+    </script>
+    
+    <!-- Hotjar Tracking Code for My site -->
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2731115,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 
 <body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">inMontana</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small" >
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#product" class="w3-bar-item w3-button"><i class="fa fa-th"></i> OUR PRODUCT</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-      <a href="mailto:inmontanaapp@gmail.com" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#product" onclick="w3_close()" class="w3-bar-item w3-button">OUR PRODUCT</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="mailto:inmontanaapp@gmail.com" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Find your next adventure</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Find your next adventure</span><br>
-    <span class="w3-large">Start discovering, the mountains await.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</header>
-
-<!-- About Section -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div id="about" class="w3-display-middle">
-  </div>
-</div>
-
-<div style="background-color: #f2f2f2; padding:128px 16px; color: black">
-  <div class="container" style="background-color: white; width:40rem; padding-top: 4vw;">
-    <h1 class="w3-center" style="font-size: 2rem">ABOUT US</h1>
-    <hr
-      style="border: 10px; background-color: black; height: 5px; border-radius: 10px; width: 5rem; margin: auto;">
-
-    <div class="container text-center"
-      style="padding-left: 5vw; padding-right: 5vw; padding-top: 5vh; padding-bottom: 5vh">
-      <p style="font-size: 1.5rem">
-        <b>inMontana</b> is an Android application that encompasses the benefits of a social platform with those of an adventure-booking one, where 
-        <b>users</b> are able to find people with similar hobbies and connect with them and discover new paths into the Romanian mountains.</b>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
       </p>
+    <![endif]-->
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
-  </div>
+    <!-- /End Preloader -->
 
-</div>
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo/logo_transparent.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="#home" class="page-scroll active"
+                                            aria-label="Toggle navigation">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#features" class="page-scroll"
+                                            aria-label="Toggle navigation">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#pricing" class="page-scroll"
+                                            aria-label="Toggle navigation">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="mailto:inmontanaapp@gmail.com" aria-label="Toggle navigation">Contact</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            <div class="button add-list-button">
+                                <a href="#subscribe" class="btn">Available soon</a>
+                            </div>
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
 
-<!-- Product Section -->
-<div class="w3-container" style="color: black; padding:128px 16px" id="product">
-  <h3 class="w3-center">WHAT WE OFFER</h3>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-map-signs w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Track finder</p>
-      <p>Use <b>inMontana</b> to discover new paths into the Romanian mountains.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-hourglass-half w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Time-saving approach</p>
-      <p>Opt for the alternative of joining an already organized trip and save time.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-users w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Socializing opportunity</p>
-      <p>All your friends are busy? Use <b>inMonatana</b> to find your new hiking companions.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-trophy w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Exciting challenges</p>
-      <p>With <b>inMontana</b> your hikes will never be boring: unlock new achivements!</p>
-    </div>
-  </div>
-</div>
+    <!-- Start Hero Area -->
+    <section id="home" class="hero-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div id="subscribe">
+                    <div class="hero-content">
+                        <h1 class="wow fadeInLeft" data-wow-delay=".4s">Start discovering, the mountains await.</h1>
+                        <h5 class="wow fadeInLeft" data-wow-delay=".6s">From discovering the perfect track to finding your travel companions, inMontana helps you planning your perfect adventure in only one app.</h5>
+                        <br>
+                        <br>
+                        <h4 class="wow fadeInLeft" data-wow-delay=".6s">Stay on track for our release date</h4>
 
+                            <form
+                            action="https://formspree.io/f/mnqwarvp"
+                            method="POST"
+                            >
+                            <label>
+                                <input required type="email" name="_replyto" placeholder="Your email address here" class="form-control form-control-lg">
+                            </label>
+                            <!-- your other form fields go here -->
+                            <div class="button add-list-button">
+                                <button type="submit" class="btn">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-12">
+                    <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
+                        <img src="assets/images/hero/phone.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
 
+    <!-- Start Features Area -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Features</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Your Hiking Experience Gets Better And Better
+                        </h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many ways in which you can customize your trip, starting from a variety of available tracks to choose from and completing new challenges to meeting other hiking enthusiats.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+                        <i class="lni lni-travel"></i>
+                        <h3>Track Finder</h3>
+                        <p>Use <b>inMontana</b> to discover new paths into the Romanian mountains.</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+                        <i class="lni lni-hourglass"></i>
+                        <h3>Time-saving approach</h3>
+                        <p>Opt for the alternative of joining an already organized trip and save time.</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+                        <i class="lni lni-users"></i>
+                        <h3>Socializing opportunity</h3>
+                        <p>All your friends are busy? Use <b>inMontana</b> to find your new hiking companions.</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+                        <i class="lni lni-target"></i>
+                        <h3>Exciting challenges</h3>
+                        <p>With <b>inMontana</b> your hikes will never be boring: unlock new achivements!</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+                        <i class="lni lni-checkmark"></i>
+                        <h3>Helpful Reviews</h3>
+                        <p>Recent reviews with enough details to help you choose the most suitable track for you. </p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+                        <i class="lni lni-unlock"></i>
+                        <h3>Booking discounts</h3>
+                        <p>Unlock special discounts for booking your overnight stay.</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features Area -->
 
-<!-- Promo Section "Statistics"
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">TODO</span>
-    <br>Hiking Trails
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">TODO</span>
-    <br>Happy Users
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">TODO</span>
-    <br>Downloads
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">TODO</span>
-    <br>TODO
-  </div>
-</div> -->
+    <!-- Start Achievement Area -->
+    <section class="our-achievement section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+                    <div class="title">
+                        <h2>Made by hiking enthusiats, for hiking enthusiats</h2>
+                        <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
+                                <h3 class="counter"><span id="secondo1" class="countup" cup-end="30">30</span>+</h3>
+                                <p>tracks available</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
+                                <h3 class="counter"><span id="secondo2" class="countup" cup-end="10">10</span>%</h3>
+                                <p>TODO</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
+                                <h3 class="counter"><span id="secondo3" class="countup" cup-end="15">15</span></h3>
+                                <p>achievements to unlock</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Achievement Area -->
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
+    <!-- Start Pricing Table Area -->
+    <section id="pricing" class="pricing-table section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">pricing</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Pricing Plan</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Choose the option which suits you the most:</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".2s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Hobby</h4>
+                            <p>All the basics for trying out <b>inMontana</b> and falling in love with the mountains</p>
+                            <div class="price">
+                                <h2 class="amount">$0<span class="duration">/mo</span></h2>
+                            </div>
+                            <div class="button">
+                                <a  class="btn">Available soon</a>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <h4 class="middle-title">What's Included</h4>
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li><i class="lni lni-checkmark-circle"></i> Join up to 10 trips per year</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Create unlimited personal trips</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Online maps</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Hiking-related Ads</li>
+                            </ul>
+                            <!-- End Table List -->
+                        </div>
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".4s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title"> Premium</h4>
+                            <p>Everything you need, if you're more easily found in the mountains than in the city</p>
+                            <div class="price">
+                                <h2 class="amount">$4.99<span class="duration">/mo</span></h2>
+                            </div>
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Available soon</a>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <h4 class="middle-title">What's Included</h4>
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li><i class="lni lni-checkmark-circle"></i> Unlimited trips</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Offline maps </li>
+                                <li><i class="lni lni-checkmark-circle"></i> Booking discounts</li>
+                                <li><i class="lni lni-checkmark-circle"></i> No ads</li>
+                            </ul>
+                            <!-- End Table List -->
+                        </div>
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Pricing Table Area -->
 
-<!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Start Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer f-about">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/logo_transparent.png" alt="#">
+                                </a>
+                            </div>
+                            <p>Helping hikers discovering Romania.</p>
+                            <!-- <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-pinterest"></i></a></li>
+                            </ul>
+                            <p class="copyright-text">Designed and Developed by <a href="https://uideck.com/"
+                                    rel="nofollow" target="_blank">UIdeck</a>
+                            </p> -->
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+    </footer>
+    <!--/ End Footer Area -->
 
-</div>
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
 
-<!-- Pricing Section -->
-<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
-  <h3>PRICING</h3>
-  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
-  <div class="w3-row-padding" style="margin-top:64px; margin-left: 200px;">
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16">Join up to 10 trips per year, create unlimited personal ones</li>
-        <li class="w3-padding-16">Online maps</li>
-        <li class="w3-padding-16">2 booking discounts</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">FREE</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="w3-third w3-section" style="float: right; margin-right: 200px;">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-32">Premium</li>
-        <li class="w3-padding-16">Unlimited trips</li>
-        <li class="w3-padding-16">Offline maps</li>
-        <li class="w3-padding-16">Booking discounts</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 4.99</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
 
-<!-- Team Section -->
-<div div class="w3-container" style="padding:128px 400px" id="team"><a href="team"></a>
-  <h1 class="page-title">OUR TEAM</h1>
-  <div class="row">
-      <div class="column">
-          <div class="team-card">
-              <img class="team-img" src="images/cristi.png">
-              <div class="container">
-                  <h2>Cristian <br> Cune</h2>
-                  <p class="title">Product Owner</p>
-              </div>
-          </div>
-      </div>
-
-      <div class="column">
-          <div class="team-card">
-              <img class="team-img" src="images/tibi.png">
-              <div class="container">
-                  <h2>Tiberiu <br> Dumitru</h2>
-                  <p class="title">Business Analyst</p>
-              </div>
-          </div>
-      </div>
-
-      <div class="column">
-          <div class="team-card">
-              <img class="team-img" src="images/bubu.png">
-              <div class="container">
-                  <h2>Alexandra <br> Minea</h2>
-                  <p class="title">Project Manager</p>
-              </div>
-          </div>
-      </div>
-
-      <div class="column">
-          <div class="team-card">
-              <img class="team-img" src="images/ralu.png">
-              <div class="container">
-                  <h2>Raluca <br> Petrescu</h2>
-                  <p class="title">Front-End Developer</p>
-              </div>
-          </div>
-      </div>
-
-      <div class="column">
-          <div class="team-card">
-              <img class="team-img" src="images/chris.png">
-              <div class="container">
-                  <h2>Cristiana <br> Vlădescu</h2>
-                  <p class="title">Back-End Developer</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <!-- <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div> -->
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
+    </script>
 </body>
+
 </html>
